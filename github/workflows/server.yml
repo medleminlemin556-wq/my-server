@@ -1,0 +1,12 @@
+> Mohamed:
+name: Free Linux Server
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-server:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start SSH Terminal
+        uses: mxschmitt/action-tmate@v3
